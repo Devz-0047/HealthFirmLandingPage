@@ -16,6 +16,7 @@ A responsive and modern landing page built using **Vite**, **TypeScript**, and *
 
 ## Project Structure
 
+```plaintext
 .
 ├── public/ # Static assets (e.g., images, fonts)
 ├── src/ # Main source code
@@ -27,6 +28,7 @@ A responsive and modern landing page built using **Vite**, **TypeScript**, and *
 ├── vite.config.js # Vite configuration
 ├── tailwind.config.js # Tailwind configuration
 └── tsconfig.json
+```
 
 ## Installation and Setup
 

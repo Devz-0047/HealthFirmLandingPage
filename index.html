@@ -15,7 +15,7 @@
     <div id="app" class="text-[#282828]">
       <!-- Navigation Bar -->
       <nav
-        class="h-[86px] bg-[#D9D9D9] flex items-center justify-around font-medium text-lg fixed top-0 left-0 w-full"
+        class="h-[86px] bg-[#D9D9D9] flex items-center justify-around font-medium text-lg fixed top-0 left-0 w-full z-50"
       >
         <img class="" src="/logo.svg" />
         <ul class="flex items-center justify-center gap-8">
@@ -46,7 +46,9 @@
         </ul>
         <div class="flex items-center justify-center gap-8">
           <button class="hover:text-[#2A0896]">Login</button>
-          <button class="text-white bg-[#2A0896] py-[10px] px-6 rounded-full">
+          <button
+            class="text-white bg-[#2A0896] py-[10px] px-6 rounded-full hover:bg-[#5725f3]"
+          >
             Request a demo
           </button>
         </div>
@@ -85,6 +87,250 @@
           </p>
         </div>
       </section>
+      <!-- Content Section  -->
+      <section class="mt-16 mb-24 relative">
+        <!-- Background container with animation -->
+        <div class="gradient-bg h-[34rem]"></div>
+
+        <!-- Grid container centered both horizontally and vertically -->
+        <div
+          class="bg-white grid grid-cols-3 h-[36rem] gap-4 w-[70rem] mx-auto relative z-10 rounded-3xl shadow-2xl pl-6"
+          style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          "
+        >
+          <div class="col-span-1 p-4 border-r-2 border-gray-500 my-6">
+            <div class="flex flex-col items-start justify-center gap-4">
+              <img src="/logo.svg" />
+              <div><p class="text-lg font-medium">Amanda Charles</p></div>
+              <div class="rounded-md max-w-sm w-[14rem]">
+                <div class="animate-pulse flex">
+                  <div class="flex-1 space-y-6 py-2">
+                    <div class="h-3 bg-slate-700 rounded-lg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-sky-600 flex items-center justify-start gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+                  />
+                </svg>
+                <p>Inbox</p>
+              </div>
+              <div class="rounded-md max-w-sm w-[10rem]">
+                <div class="animate-pulse flex">
+                  <div class="flex-1 space-y-4 py-2 flex flex-col gap-4">
+                    <div class="h-3 bg-slate-700 rounded-lg"></div>
+                    <div class="h-3 bg-slate-700 rounded-lg"></div>
+                    <div class="h-3 bg-slate-700 rounded-lg"></div>
+                    <div class="h-3 bg-slate-700 rounded-lg"></div>
+                    <div class="h-3 bg-slate-700 rounded-lg"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-2 p-4">
+            <div
+              class="flex items-center justify-start pt-4 text-2xl gap-6 text-sky-500 font-medium border-gray-300 border-b-2 pb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 30 30"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-10 pt-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+                />
+              </svg>
+              <p>Inbox</p>
+            </div>
+            <div class="flex items-center gap-9">
+              <div class="flex items-center justify-start pt-3 gap-4">
+                <p class="">Order:</p>
+                <button class="bg-gray-300 py-1 px-3 rounded-sm pl-2">
+                  Newest
+                </button>
+                <button class="bg-sky-500 text-white py-1 px-3 rounded-sm">
+                  Oldest
+                </button>
+              </div>
+
+              <div>
+                <div class="flex items-center justify-start pt-3 gap-4">
+                  <p class="">Filter:</p>
+                  <button class="bg-gray-300 py-1 px-3 rounded-sm pl-2">
+                    Alls
+                  </button>
+                  <button class="bg-sky-500 text-white py-1 px-3 rounded-sm">
+                    Calls
+                  </button>
+                  <button class="bg-sky-500 text-white py-1 px-3 rounded-sm">
+                    SMS
+                  </button>
+                  <button class="bg-sky-500 text-white py-1 px-3 rounded-sm">
+                    Voicemails
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex item center justify-between px-12 font-medium shadow-md py-2 mt-4"
+            >
+              <p>Name</p>
+              <p>Last Contact</p>
+            </div>
+            <div
+              class="shadow-md py-3 flex items-center justify-between px-12 mt-2"
+            >
+              <img src="/profilephoto1.jpeg" class="rounded-full h-9" />
+              <p>(305) 440-0858</p>
+              <button
+                class="bg-sky-500 py-2 px-4 text-white flex items-center justify-center gap-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="0"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+                <p class="text-xs">1</p>
+              </button>
+              <p>20 hours ago</p>
+            </div>
+            <div
+              class="shadow-md py-3 flex items-center justify-between px-12 mt-2"
+            >
+              <img src="/profilephoto2.jpeg" class="rounded-full h-9" />
+              <p>(109) 578-9043</p>
+              <button
+                class="bg-sky-500 py-2 px-4 text-white flex items-center justify-center gap-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="0"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+                <p class="text-xs">4</p>
+              </button>
+              <p>17 hours ago</p>
+            </div>
+            <div
+              class="shadow-md py-3 flex items-center justify-between px-12 mt-2"
+            >
+              <img src="/profilephoto3.jpg" class="rounded-full h-9" />
+              <p>(850) 892-5684</p>
+              <button
+                class="bg-sky-500 py-2 px-4 text-white flex items-center justify-center gap-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="0"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+                <p class="text-xs">2</p>
+              </button>
+              <p>9 hours ago</p>
+            </div>
+            <div
+              class="shadow-md py-3 flex items-center justify-between px-12 mt-2"
+            >
+              <img src="/profilephoto4.jpg" class="rounded-full h-9" />
+              <p>(151) 896-4587</p>
+              <button
+                class="bg-sky-500 py-2 px-4 text-white flex items-center justify-center gap-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="0"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+                <p class="text-xs">9</p>
+              </button>
+              <p>3 hours ago</p>
+            </div>
+            <div class="shadow-md py-3 flex items-center justify-between px-12">
+              <img src="/profilephoto5.jpg" class="rounded-full h-9 w-9" />
+              <p>(456) 874-5864</p>
+              <button
+                class="bg-sky-500 py-2 px-4 text-white flex items-center justify-center gap-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="white"
+                  viewBox="0 0 24 24"
+                  stroke-width="0"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+                <p class="text-xs">2</p>
+              </button>
+              <p>6 hours ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
       <footer id="footer" class="bg-[#2A0896] pt-20 text-white">
         <div
           class="grid grid-cols-3 justify-center items-center justify-items-center"
@@ -196,7 +442,7 @@
             <p class="text-xl font-semibold">Subscribe Newsletter</p>
             <form class="flex items-center justify-start gap-0">
               <input
-                class="w-72 py-3 px-4 rounded-full text-lg"
+                class="w-72 py-3 px-4 rounded-full text-lg outline-none"
                 placeholder="Email"
               />
               <button class="bg-[#2A52BE] px-4 py-4 rounded-full">
